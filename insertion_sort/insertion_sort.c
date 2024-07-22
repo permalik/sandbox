@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 // TODO: impl all insertion sort concepts
+// TODO: impl test
+// TODO: impl complexity analysis
 
 void insertion_sort(int arr[], int len) {
   for (int i = 1; i < len; i++) {
