@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// TODO: impl all insertion sort concepts
+
 void insertion_sort(int arr[], int len) {
   for (int i = 1; i < len; i++) {
     int tmp = arr[i];
