@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // TODO: impl recursive strategy
+// TODO: impl reverse sorting
 // TODO: impl test
 // TODO: impl complexity analysis
 // TODO: update script to start from certain home location
