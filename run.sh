@@ -5,16 +5,16 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
-build_insertion_sort="/Users/au4/git/dsa_c/insertion_sort/build"
+build_insertion_sort="./insertion_sort/build"
 
 if [ "$1" == "insertion_sort" ]; then
     if [ -d "$build_insertion_sort" ]; then
         echo "tearing down build.."
-        rm -rf /Users/au4/git/dsa_c/insertion_sort/build
-        cd /Users/au4/git/dsa_c/insertion_sort
+        rm -rf ./insertion_sort/build
+        cd ./insertion_sort
         echo "creating build directory.."
         mkdir build
-        cd /Users/au4/git/dsa_c/insertion_sort/build
+        cd ./build
         echo "generating build assets.."
         cmake ..
         echo "compiling project.."
@@ -22,10 +22,10 @@ if [ "$1" == "insertion_sort" ]; then
         echo "executing project.."
         ./insertion_sort
     else
-        cd /Users/au4/git/dsa_c/insertion_sort
+        cd ./insertion_sort
         echo "creating build directory.."
         mkdir build
-        cd /Users/au4/git/dsa_c/insertion_sort/build
+        cd ./build
         echo "generating build assets.."
         cmake ..
         echo "compiling project.."
