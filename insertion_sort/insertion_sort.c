@@ -5,6 +5,7 @@
 // TODO: impl test
 // TODO: impl complexity analysis
 // TODO: update script to start from certain home location
+// TODO: script takes dynamic pos pars: <alg><strategy>
 
 void iterative_insertion_sort(int arr[], int len) {
   for (int i = 1; i < len; i++) {
@@ -27,14 +28,14 @@ void recursive_insertion_sort(int arr[], int n) {
 
   recursive_insertion_sort(arr, n - 1);
 
-  int last = arr[n - 1];
+  int tmp = arr[n - 1];
   int j = n - 2;
 
-  while (j >= 0 && arr[j] < last) {
+  while (j >= 0 && arr[j] > tmp) {
     arr[j + 1] = arr[j];
     j--;
   }
-  arr[j + 1] = last;
+  arr[j + 1] = tmp;
 }
 
 int main() {
