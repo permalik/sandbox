@@ -6,6 +6,9 @@ project(insertion_sort C)      # Define the project name and language
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED True)
 
+# Add compile_options for debug information
+add_compile_options(-g)
+
 # Specify the source files and header files
 set(SOURCES
     insertion_sort.c
