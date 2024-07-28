@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// TODO: impl recursive strategy
 // TODO: impl reverse sorting
 // TODO: impl test
 // TODO: impl complexity analysis
@@ -26,15 +25,8 @@ void recursive_insertion_sort(int arr[], int n) {
     return;
   }
 
-  printf("\nstack:: (arr, %d -1)", n);
   recursive_insertion_sort(arr, n - 1);
 
-  printf("\npresort:\n");
-  printf("{ ");
-  for (int i = 0; i < 10; i++) {
-    printf("%d ", arr[i]);
-  }
-  printf("}");
   int tmp = arr[n - 1];
   int j = n - 2;
 
@@ -43,12 +35,6 @@ void recursive_insertion_sort(int arr[], int n) {
     j--;
   }
   arr[j + 1] = tmp;
-  printf("\npostsort:\n");
-  printf("{ ");
-  for (int i = 0; i < 10; i++) {
-    printf("%d ", arr[i]);
-  }
-  printf("}");
 }
 
 int main() {
@@ -82,7 +68,7 @@ int main() {
 
   printf("unsorted array:\n");
   printf("{ ");
-  for (int i = 0; i < length_two; i++) {
+  for (int i = 0; i < length_one; i++) {
     printf("%d ", array_two[i]);
   }
   printf("}");
@@ -95,5 +81,6 @@ int main() {
     printf("%d ", array_two[i]);
   }
   printf("}");
+
   return 0;
 }
