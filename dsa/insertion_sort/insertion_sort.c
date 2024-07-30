@@ -45,20 +45,16 @@ int main() {
   size_t length_one = size_in_bytes_one / item_size_one;
 
   printf("unsorted array:\n");
-  printf("{ ");
   for (int i = 0; i < length_one; i++) {
     printf("%d ", array_one[i]);
   }
-  printf("}");
 
   iterative_insertion_sort(array_one, length_one);
 
   printf("\nsorted array:\n");
-  printf("{ ");
   for (int i = 0; i < length_one; i++) {
     printf("%d ", array_one[i]);
   }
-  printf("}");
 
   printf("\nRECURSIVE INSERTION SORT:\n");
   int array_two[10] = {5, 7, 3, 6, 1, 4, 0, 9, 8, 2};
@@ -67,20 +63,16 @@ int main() {
   size_t length_two = size_in_bytes_two / item_size_two;
 
   printf("unsorted array:\n");
-  printf("{ ");
   for (int i = 0; i < length_one; i++) {
     printf("%d ", array_two[i]);
   }
-  printf("}");
 
   recursive_insertion_sort(array_two, length_two);
 
   printf("\nsorted array:\n");
-  printf("{ ");
   for (int i = 0; i < length_one; i++) {
     printf("%d ", array_two[i]);
   }
-  printf("}");
 
   return 0;
 }
