@@ -11,11 +11,11 @@ add_compile_options(-g)
 
 # Specify the source files and header files
 set(SOURCES
-    insertion_sort.c
+    ./insertion_sort.c
 )
 
 # set(HEADERS
-#     src/insertion_sort.h
+#     ./insertion_sort.h
 # )
 
 # Create an executable target

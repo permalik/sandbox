@@ -5,14 +5,14 @@ if [ -z "$1" ]; then
 fi
 
 project_name=$1
-build_dir="./build"
+build_dir="./${project_name}/src/build"
 
 if [ -d "$build_dir" ]; then
     echo "tearing down build.."
-    rm -rf ./build
+    rm -rf ${build_dir}
     echo "creating build directory.."
-    mkdir -p build
-    cd ./build
+    mkdir -p ${build_dir}
+    cd ${build_dir}
     echo "generating build assets.."
     cmake ..
     echo "compiling project.."
@@ -21,8 +21,8 @@ if [ -d "$build_dir" ]; then
     ./${project_name}
 else
     echo "creating build directory.."
-    mkdir build
-    cd ./build
+    mkdir ${build_dir}
+    cd ${build_dir}
     echo "generating build assets.."
     cmake ..
     echo "compiling project.."
