@@ -53,10 +53,10 @@ dkms.conf
 
 
 # Ignore build directories
-/build/
-/_build/
-/cmake-build-debug/
-/cmake-build-release/
+/build/**
+/_build/**
+/cmake-build-debug/**
+/cmake-build-release/**
 
 # Ignore CMake specific files
 CMakeCache.txt
