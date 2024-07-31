@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// TODO: functions should alter array in place, rather generate their own
+// TODO: refactor to randomize the array
 // TODO: impl reverse sorting
 // TODO: impl test
 // TODO: impl complexity analysis
