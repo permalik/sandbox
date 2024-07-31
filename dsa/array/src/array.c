@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// TODO: impl multidimensional array
-// TODO: impl array of pointers
-
 void static_array() {
   int arr[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
   int elm_len = sizeof(int);
@@ -25,7 +22,7 @@ void dynamic_array() {
 
   arr = (int *)malloc(arr_len * sizeof(int));
 
-  printf("\nINIT DYNAMIC ARRAY (10):\n");
+  printf("INIT DYNAMIC ARRAY (10):\n");
   for (int i = 0; i < arr_len; i++) {
     arr[i] = i + 1;
     printf("%d ", arr[i]);
@@ -58,9 +55,34 @@ void multidimensional_array() {
   }
 }
 
+void pointer_array() {
+  int size = 3;
+  int *arr[5];
+
+  for (int i = 0; i < size; i++) {
+    arr[i] = (int *)malloc(size * sizeof(int));
+    for (int j = 0; j < size; j++) {
+      arr[i][j] = i * size + j + 1;
+    }
+  }
+
+  printf("POINTER ARRAY:\n");
+  for (int i = 0; i < size; i++) {
+    for (int j = 0; j < size; j++) {
+      printf("%d", arr[i][j]);
+    }
+    printf("\n");
+  }
+
+  for (int i = 0; i < size; i++) {
+    free(arr[i]);
+  }
+}
+
 int main() {
   static_array();
   dynamic_array();
   multidimensional_array();
+  pointer_array();
   return 0;
 }
