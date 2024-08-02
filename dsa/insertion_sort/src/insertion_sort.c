@@ -40,38 +40,38 @@ void recursive_insertion_sort(int arr[], int n) {
 }
 
 int main() {
-  printf("ITERATIVE INSERTION SORT:\n");
+  printf("iterative insertion sort:\n");
   int array_one[10] = {5, 7, 3, 6, 1, 4, 0, 9, 8, 2};
   size_t size_in_bytes_one = sizeof(array_one);
-  size_t item_size_one = sizeof(array_one[0]);
+  size_t item_size_one = sizeof(int);
   size_t length_one = size_in_bytes_one / item_size_one;
 
-  printf("unsorted array:\n");
   for (int i = 0; i < length_one; i++) {
-    printf("%d ", array_one[i]);
+    if (i == length_one - 1) {
+      printf("%d\n", array_one[i]);
+    } else {
+      printf("%d ", array_one[i]);
+    }
   }
-
   iterative_insertion_sort(array_one, length_one);
-
-  printf("\nsorted array:\n");
   for (int i = 0; i < length_one; i++) {
     printf("%d ", array_one[i]);
   }
 
-  printf("\nRECURSIVE INSERTION SORT:\n");
+  printf("\nrecursive insertion sort:\n");
   int array_two[10] = {5, 7, 3, 6, 1, 4, 0, 9, 8, 2};
   size_t size_in_bytes_two = sizeof(array_two);
-  size_t item_size_two = sizeof(array_two[0]);
+  size_t item_size_two = sizeof(int);
   size_t length_two = size_in_bytes_two / item_size_two;
 
-  printf("unsorted array:\n");
   for (int i = 0; i < length_one; i++) {
-    printf("%d ", array_two[i]);
+    if (i == length_two - 1) {
+      printf("%d\n", array_two[i]);
+    } else {
+      printf("%d ", array_two[i]);
+    }
   }
-
   recursive_insertion_sort(array_two, length_two);
-
-  printf("\nsorted array:\n");
   for (int i = 0; i < length_one; i++) {
     printf("%d ", array_two[i]);
   }
