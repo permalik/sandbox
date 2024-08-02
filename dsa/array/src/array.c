@@ -6,7 +6,7 @@ void static_array() {
   int elm_len = sizeof(int);
   int arr_len = sizeof(arr) / elm_len;
 
-  printf("STATIC ARRAY:\n");
+  printf("static array:\n");
   for (int i = 0; i < arr_len; i++) {
     if (i == arr_len - 1) {
       printf("%d\n", arr[i]);
@@ -22,7 +22,7 @@ void dynamic_array() {
 
   arr = (int *)malloc(arr_len * sizeof(int));
 
-  printf("INIT DYNAMIC ARRAY (10):\n");
+  printf("init dynamic array (10):\n");
   for (int i = 0; i < arr_len; i++) {
     arr[i] = i + 1;
     printf("%d ", arr[i]);
@@ -31,7 +31,7 @@ void dynamic_array() {
   arr_len = 20;
   arr = (int *)realloc(arr, arr_len * sizeof(int));
 
-  printf("\nRESIZE DYNAMIC ARRAY (20):\n");
+  printf("\nresize dynamic array (20):\n");
   for (int i = 0; i < arr_len; i++) {
     arr[i] = i + 1;
     printf("%d ", arr[i]);
@@ -43,7 +43,7 @@ void dynamic_array() {
 void multidimensional_array() {
   int arr[2][3][2] = {{{1, 2}, {3, 4}, {5, 6}}, {{7, 8}, {9, 10}, {11, 12}}};
 
-  printf("\nMULTIDIMENSIONAL ARRAY:\n");
+  printf("\nmultidimensional array:\n");
   for (int i = 0; i < 2; i++) {
     for (int j = 0; j < 3; j++) {
       for (int k = 0; k < 2; k++) {
@@ -66,7 +66,7 @@ void pointer_array() {
     }
   }
 
-  printf("POINTER ARRAY:\n");
+  printf("pointer array:\n");
   for (int i = 0; i < size; i++) {
     for (int j = 0; j < size; j++) {
       printf("%d", arr[i][j]);
