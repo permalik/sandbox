@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// TODO: change arrays in place; move pre/post prints to main
 // TODO: impl sizeof arr :45
 
 void static_array() {
