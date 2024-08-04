@@ -5,11 +5,10 @@
 
 void static_array() {
   int arr[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-  int elm_len = sizeof(int);
-  int arr_len = sizeof(arr) / elm_len;
+  int size = sizeof(arr) / sizeof(int);
 
-  for (int i = 0; i < arr_len; i++) {
-    if (i == arr_len - 1) {
+  for (int i = 0; i < size; i++) {
+    if (i == size - 1) {
       printf("%d\n", arr[i]);
     } else {
       printf("%d ", arr[i]);
@@ -19,20 +18,20 @@ void static_array() {
 
 void dynamic_array() {
   int *arr;
-  int arr_len = 10;
+  int size = 10;
 
-  arr = (int *)malloc(arr_len * sizeof(int));
+  arr = (int *)malloc(size * sizeof(int));
 
-  for (int i = 0; i < arr_len; i++) {
+  for (int i = 0; i < size; i++) {
     arr[i] = i + 1;
     printf("%d ", arr[i]);
   }
 
-  arr_len = 20;
-  arr = (int *)realloc(arr, arr_len * sizeof(int));
+  size = 20;
+  arr = (int *)realloc(arr, size * sizeof(int));
 
   printf("\ndynamic array (resize):\n");
-  for (int i = 0; i < arr_len; i++) {
+  for (int i = 0; i < size; i++) {
     arr[i] = i + 1;
     printf("%d ", arr[i]);
   }
