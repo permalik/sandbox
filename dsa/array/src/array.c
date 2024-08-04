@@ -23,8 +23,10 @@ void dynamic_array() {
   arr = (int *)malloc(size * sizeof(int));
 
   for (int i = 0; i < size; i++) {
-    arr[i] = i + 1;
+    int iterator = 0;
+    arr[i] = i + iterator;
     printf("%d ", arr[i]);
+    iterator++;
   }
 
   size = 20;
@@ -32,8 +34,10 @@ void dynamic_array() {
 
   printf("\ndynamic array (resize):\n");
   for (int i = 0; i < size; i++) {
-    arr[i] = i + 1;
+    int iterator = 0;
+    arr[i] = i + iterator;
     printf("%d ", arr[i]);
+    iterator++;
   }
 
   free(arr);
