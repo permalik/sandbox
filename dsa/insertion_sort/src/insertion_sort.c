@@ -7,6 +7,7 @@
 // TODO: impl complexity analysis
 // TODO: update script to start from certain home location
 // TODO: script takes dynamic pos pars: <alg><strategy>
+// TODO: document testing process in readme
 
 void iterative_insertion_sort(int arr[], int len) {
   for (int i = 1; i < len; i++) {
