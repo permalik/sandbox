@@ -21,3 +21,7 @@ cd /dsa
 ##### insertion sort
 - iterative_insertion_sort
 - recursive_insertion_sort
+
+###### resource
+[programming.language.c.*](https://github.com/permalik/literature)
+[programming.language.dsa.*](https://github.com/permalik/literature)
