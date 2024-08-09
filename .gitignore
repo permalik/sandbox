@@ -1,13 +1,14 @@
 #
-# C
+# C and CPP
 #
 # Prerequisites
 *.d
-# Object files
+# Object files | Compiled Object Files
 *.o
 *.ko
 *.obj
 *.elf
+*.slo
 # Linker output
 *.ilk
 *.map
@@ -20,7 +21,9 @@
 *.a
 *.la
 *.lo
-# Shared objects (inc. Windows DLLs)
+# Compiled Static Libraries
+*.lai
+# Shared objects (inc. Windows DLLs) | Compiled Dynamic Libraries
 *.dll
 *.so
 *.so.*
@@ -45,6 +48,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+# Fortran module files
+*.mod
+*.smod
 # Ignore build directories
 **/build
 /build/**

@@ -5,6 +5,14 @@
 # execute c
 cd /c/dsa
 ./run.sh < project_name >
+# example
+./run.sh array
+
+# execute cpp
+cd /cpp/dsa
+./run.sh < project_name >
+# example
+./run.sh array
 ```
 #### data structures
 ##### array
@@ -16,4 +24,4 @@ cd /c/dsa
 - iterative_insertion_sort
 - recursive_insertion_sort
 ###### resources
-[literature](https://github.com/permalik/literature)
+- [literature](https://github.com/permalik/literature)
