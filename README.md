@@ -15,4 +15,5 @@ cd /c/dsa
 ##### insertion sort
 - iterative_insertion_sort
 - recursive_insertion_sort
-###### [resource](https://github.com/permalik/literature)
+###### resources
+[literature](https://github.com/permalik/literature)
