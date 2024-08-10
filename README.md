@@ -9,10 +9,19 @@ cd /c/dsa
 ./run.sh array
 
 # execute zig
-
+cd /zig/dsa
+./run.sh < project_name >
+# example
+./run.sh array
 
 # execute cpp
 cd /cpp/dsa
+./run.sh < project_name >
+# example
+./run.sh array
+
+# execute rust
+cd /rust/dsa
 ./run.sh < project_name >
 # example
 ./run.sh array

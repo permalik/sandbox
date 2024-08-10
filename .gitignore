@@ -105,6 +105,12 @@ go.work.sum
 **/.zig-cache
 
 #
+# Rust
+#
+# Build assets
+**/target
+
+#
 # Dev Environment
 #
 # Ignore IDE and editor files
