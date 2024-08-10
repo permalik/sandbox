@@ -8,6 +8,9 @@ cd /c/dsa
 # example
 ./run.sh array
 
+# execute zig
+
+
 # execute cpp
 cd /cpp/dsa
 ./run.sh < project_name >

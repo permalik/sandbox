@@ -99,6 +99,12 @@ go.work
 go.work.sum
 
 #
+# Zig
+#
+# Cache
+**/.zig-cache
+
+#
 # Dev Environment
 #
 # Ignore IDE and editor files
