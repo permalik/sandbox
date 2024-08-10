@@ -13,6 +13,12 @@ cd /cpp/dsa
 ./run.sh < project_name >
 # example
 ./run.sh array
+
+# execute go
+cd /go/dsa
+./run.sh < project_name >
+# example
+./run.sh array
 ```
 #### data structures
 ##### array

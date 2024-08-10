@@ -90,6 +90,15 @@ config.status
 *.gcov
 
 #
+# Go
+#
+# Test binary, built with `go test -c`
+*.test
+# Go workspace file
+go.work
+go.work.sum
+
+#
 # Dev Environment
 #
 # Ignore IDE and editor files
@@ -104,7 +113,7 @@ config.status
 #
 # Ignore macOS specific files
 .DS_Store
-# Ignore Windows specific files
+#Ignore Windows specific files
 Thumbs.db
 
 #
