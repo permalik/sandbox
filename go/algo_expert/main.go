@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println("main.go")
+	fmt.Println("starting algo_expert: go")
 }
